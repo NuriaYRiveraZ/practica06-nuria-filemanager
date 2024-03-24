@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #adacac;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 8px; /* Reduce el padding */
+    font-size: 11px; /* Reduce el tamaño de la fuente */
+    text-align: center;
+}
+
+th {
+    background-color: #3e1139;
+    color: #e6e7e8;
+    font-size: 11px; /* Reduce el tamaño de la fuente */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+td img {
+    height: 50px; /* Reduce el tamaño de la imagen */
+    width: 50px; /* Reduce el tamaño de la imagen */
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 3px solid #e6e7e8;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #edeef1;
+}
+
+td button {
+    border: none;
+    padding: 5px 15px; /* Reduce el padding */
+    border-radius: 20px;
+    background-color: #3e1139;
+    color: #e6e7e8;
+    font-size: 11px; /* Reduce el tamaño de la fuente */
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#subir-archivo-form {
+    padding: 15px; /* Reduce el padding */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#subir-archivo-form label {
+    display: block;
+    margin-bottom: 8px; /* Reduce el margen inferior */
+    font-weight: bold;
+}
+
+#subir-archivo-form input[type="text"],
+#subir-archivo-form input[type="file"],
+#subir-archivo-form button {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 4px; /* Reduce el padding */
+    margin-bottom: 8px; /* Reduce el margen inferior */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 11px; /* Reduce el tamaño de la fuente */
+}
+
+.table-container {
+    margin: 15px; /* Reduce el margen */
+    overflow: hidden;
+}
+
+.table-container h1,
+.table-container h2 {
+    margin-bottom: 8px; /* Reduce el margen inferior */
+}
+.cerrar-sesion {
+    text-align: center;
+    margin-top: 15px; /* Reduce el margen superior */
+}
+
+/* Estilo para los botones de subir archivo y cerrar sesión */
+#subir-archivo-form button,
+.cerrar-sesion button {
+    border: none;
+    padding: 5px 15px; /* Reduce el padding */
+    border-radius: 20px;
+    background-color: #3e1139;
+    color: #e6e7e8;
+    font-size: 11px; /* Reduce el tamaño de la fuente */
+}
